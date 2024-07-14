@@ -1,0 +1,108 @@
+<!--Prática.
+     Você deverá implementar um formulário de pesquisa de satisfação. 
+     Esse formulário é dividido em duas partes.
+a. Dados pessoais, onde o cliente deverá fornecer:
+ nome,
+ e-mail, 
+ telefone para contato.
+b. Pesquisa, onde o cliente deverá responder a três perguntas.
+ Duas delas utilizarão radio buttons como campo de resposta, e 
+ uma utilizará menu de dropdown. Antes do botão de envio,
+ inclua um checkbox indicando se o cliente autoriza compartilhar sua resposta com terceiros.
+
+Faça commit da sua página com o nome formulario.html no seu repositório do GitHub.
+ Envie nessa atividade o link direto para o seu arquivo no GitHub.-->
+
+ <!DOCTYPE html>
+<html>
+    <head>
+<title>
+    Forms
+</title>
+    </head>
+    <body>
+        <header>
+            <title>formulário de pesquisa de satisfação </title> </p>
+        </header>
+        <form action="pagina_destino.html" method="POST">
+            <h1>Pesquisa de satisfação</h1>
+            <section><!--primeira secção com dados pessoais-->
+                <h2>Dados Pessoais</h2>
+               <p><!--nome-->
+                   <label for="nome">Nome:</label>
+                   <input type="text"placeholder= "Nome Completo" id=nome> 
+              </p>
+               <p> <!--E-mail-->
+                   <label for=e-mail>E-mail:</label>
+                   <input type="<e-mail>"placeholder="???@???" id=e-mail>
+              </p> 
+               <p><!--Telefone de contato-->
+                <label for="telefone">Telefone para contato:</label>
+               <input type="tel" placeholder="DDD xxxxx-xxxx" id=telefone>
+        </p>  
+            </section>
+            <section> <!--segunda secção com questionário-->
+                <h2>Questionário</h2>
+               <p> <!--2 radio butons-->
+                <h3>De acordo com sua experiência com nossos produtos e serviços avalie</h3>
+                 </p>
+                 <p>
+                    Como você se sente quanto ao nosso Atendimento?
+                    </p>
+                    <p>
+                  <label for="1">Insatisfeito </label>
+                  <input type="radio"id="1" name="satisfação">
+                  <label for="2">satisfeito</label>
+                  <input type="radio"id="2" name="satisfação">
+                  <label for="3">muito satisfeito</label>
+                  <input type="radio"id="3" name="satisfação">
+    
+                  
+                </p>
+
+                <p>
+                    
+                  O que você achou da qualidade dos nossos produtos?
+                  </p>
+                  <input type="radio"id="1" name="qualidade">
+              <label for="1">Não atendeu a expectativa</label>
+              <input type="radio"id="2" name="qualidade">
+              <label for="2">Atendeu a expectativa</label>
+              <input type="radio"id="3" name="qualidade">
+              <label for="3">superou a expectativa</label>
+             
+               </section>
+               <section> <!--Dropdownm-->
+<p>
+    <Label>Qual produto você mais busca em nossa platafoma?</Label>
+    </p>
+    <Select>
+        <option>Cama, Mesa e Banho</option>
+        <option>Perfumaria</option>
+        <option>Utilidades Domésticas </option>
+        <option>Eletrônicos</option>
+    </Select>
+</p>
+               </section>
+               <section><!--Textarea-->
+               <p>
+                Deixe aqui sua sugestão para que possamos te atender melhorar
+               </p>
+               <textarea>
+                Sua opinião é muito importante para melhorarmos nossos negócio.
+               </textarea>
+            </section>
+               <section><!--Checkbox-Compartilhamento de respostass-->
+                <p>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Aceita disponibilizar suas respostas  a outros usuários?</label>
+               
+               </p>
+               </section>
+        </form>
+
+        <footer>
+
+        </footer>
+    </body>
+</html> 
